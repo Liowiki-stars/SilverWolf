@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A1000001000000000000001 /* SilverWolfApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000002000000000000001 /* SilverWolfApp.swift */; };
+		A1000001000000000000002 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000002000000000000002 /* AppState.swift */; };
+		A1000001000000000000003 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000002000000000000003 /* ChatViewModel.swift */; };
+		A1000001000000000000004 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000002000000000000004 /* ChatView.swift */; };
+		A1000001000000000000005 /* SilverWolfPersona.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000002000000000000005 /* SilverWolfPersona.swift */; };
+		A1000001000000000000006 /* CompanionModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000002000000000000006 /* CompanionModeView.swift */; };
+		A1000001000000000000007 /* CompanionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000002000000000000007 /* CompanionViewModel.swift */; };
+		A1000001000000000000008 /* SilverWolfAvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000002000000000000008 /* SilverWolfAvatarView.swift */; };
+		A1000001000000000000009 /* Memory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000002000000000000009 /* Memory.swift */; };
+		A1000001000000000000010 /* MemoryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000002000000000000010 /* MemoryStore.swift */; };
+		A1000001000000000000011 /* SmartSceneDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000002000000000000011 /* SmartSceneDetector.swift */; };
+		A1000001000000000000012 /* ActionConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000002000000000000012 /* ActionConfirmationView.swift */; };
+		A1000001000000000000013 /* AppLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000002000000000000013 /* AppLauncher.swift */; };
+		A1000001000000000000014 /* IntentDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000002000000000000014 /* IntentDetector.swift */; };
+		A1000001000000000000015 /* MusicViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000002000000000000015 /* MusicViewModel.swift */; };
+		A1000001000000000000016 /* MusicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000002000000000000016 /* MusicView.swift */; };
+		A1000001000000000000017 /* NetEaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000002000000000000017 /* NetEaseService.swift */; };
+		A1000001000000000000018 /* PlayerBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000002000000000000018 /* PlayerBar.swift */; };
+		A1000001000000000000019 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000002000000000000019 /* SettingsView.swift */; };
+		A1000001000000000000020 /* SmartHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000002000000000000020 /* SmartHomeView.swift */; };
+		A1000001000000000000021 /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000002000000000000021 /* ChatMessage.swift */; };
+		A1000001000000000000022 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000002000000000000022 /* Song.swift */; };
+		A1000001000000000000023 /* AIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000002000000000000023 /* AIService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A1000002000000000000001 /* SilverWolfApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SilverWolfApp.swift; sourceTree = "<group>"; };
+		A1000002000000000000002 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		A1000002000000000000003 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		A1000002000000000000004 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		A1000002000000000000005 /* SilverWolfPersona.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SilverWolfPersona.swift; sourceTree = "<group>"; };
+		A1000002000000000000006 /* CompanionModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanionModeView.swift; sourceTree = "<group>"; };
+		A1000002000000000000007 /* CompanionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanionViewModel.swift; sourceTree = "<group>"; };
+		A1000002000000000000008 /* SilverWolfAvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SilverWolfAvatarView.swift; sourceTree = "<group>"; };
+		A1000002000000000000009 /* Memory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memory.swift; sourceTree = "<group>"; };
+		A1000002000000000000010 /* MemoryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryStore.swift; sourceTree = "<group>"; };
+		A1000002000000000000011 /* SmartSceneDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartSceneDetector.swift; sourceTree = "<group>"; };
+		A1000002000000000000012 /* ActionConfirmationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionConfirmationView.swift; sourceTree = "<group>"; };
+		A1000002000000000000013 /* AppLauncher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLauncher.swift; sourceTree = "<group>"; };
+		A1000002000000000000014 /* IntentDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentDetector.swift; sourceTree = "<group>"; };
+		A1000002000000000000015 /* MusicViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewModel.swift; sourceTree = "<group>"; };
+		A1000002000000000000016 /* MusicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicView.swift; sourceTree = "<group>"; };
+		A1000002000000000000017 /* NetEaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetEaseService.swift; sourceTree = "<group>"; };
+		A1000002000000000000018 /* PlayerBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerBar.swift; sourceTree = "<group>"; };
+		A1000002000000000000019 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		A1000002000000000000020 /* SmartHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartHomeView.swift; sourceTree = "<group>"; };
+		A1000002000000000000021 /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
+		A1000002000000000000022 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		A1000002000000000000023 /* AIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIService.swift; sourceTree = "<group>"; };
+		A1000003000000000000001 /* SilverWolf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SilverWolf.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1000003000000000000002 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A1000003000000000000003 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1000003000000000000004 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A1000004000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A1000005000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				A1000005000000000000002 /* SilverWolf */,
+				A1000005000000000000003 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A1000005000000000000002 /* SilverWolf */ = {
+			isa = PBXGroup;
+			children = (
+				A1000002000000000000001 /* SilverWolfApp.swift */,
+				A1000002000000000000002 /* AppState.swift */,
+				A1000003000000000000003 /* Info.plist */,
+				A1000003000000000000002 /* Assets.xcassets */,
+				A1000005000000000000004 /* Features */,
+				A1000005000000000000005 /* Models */,
+				A1000005000000000000006 /* Services */,
+				A1000005000000000000007 /* Preview Content */,
+			);
+			path = SilverWolf;
+			sourceTree = "<group>";
+		};
+		A1000005000000000000003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A1000003000000000000001 /* SilverWolf.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A1000005000000000000004 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				A1000005000000000000008 /* Chat */,
+				A1000005000000000000009 /* Companion */,
+				A1000005000000000000010 /* Music */,
+				A1000005000000000000011 /* Settings */,
+				A1000005000000000000012 /* SmartHome */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		A1000005000000000000008 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				A1000002000000000000003 /* ChatViewModel.swift */,
+				A1000002000000000000004 /* ChatView.swift */,
+				A1000002000000000000005 /* SilverWolfPersona.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		A1000005000000000000009 /* Companion */ = {
+			isa = PBXGroup;
+			children = (
+				A1000002000000000000006 /* CompanionModeView.swift */,
+				A1000002000000000000007 /* CompanionViewModel.swift */,
+				A1000002000000000000008 /* SilverWolfAvatarView.swift */,
+				A1000005000000000000013 /* Actions */,
+				A1000005000000000000014 /* Memory */,
+			);
+			path = Companion;
+			sourceTree = "<group>";
+		};
+		A1000005000000000000013 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				A1000002000000000000012 /* ActionConfirmationView.swift */,
+				A1000002000000000000013 /* AppLauncher.swift */,
+				A1000002000000000000014 /* IntentDetector.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		A1000005000000000000014 /* Memory */ = {
+			isa = PBXGroup;
+			children = (
+				A1000002000000000000009 /* Memory.swift */,
+				A1000002000000000000010 /* MemoryStore.swift */,
+				A1000002000000000000011 /* SmartSceneDetector.swift */,
+			);
+			path = Memory;
+			sourceTree = "<group>";
+		};
+		A1000005000000000000010 /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				A1000002000000000000015 /* MusicViewModel.swift */,
+				A1000002000000000000016 /* MusicView.swift */,
+				A1000002000000000000017 /* NetEaseService.swift */,
+				A1000002000000000000018 /* PlayerBar.swift */,
+			);
+			path = Music;
+			sourceTree = "<group>";
+		};
+		A1000005000000000000011 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				A1000002000000000000019 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		A1000005000000000000012 /* SmartHome */ = {
+			isa = PBXGroup;
+			children = (
+				A1000002000000000000020 /* SmartHomeView.swift */,
+			);
+			path = SmartHome;
+			sourceTree = "<group>";
+		};
+		A1000005000000000000005 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A1000002000000000000021 /* ChatMessage.swift */,
+				A1000002000000000000022 /* Song.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A1000005000000000000006 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A1000002000000000000023 /* AIService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A1000005000000000000007 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A1000003000000000000004 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A1000006000000000000001 /* SilverWolf */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1000009000000000000001 /* Build configuration list for PBXNativeTarget "SilverWolf" */;
+			buildPhases = (
+				A1000007000000000000001 /* Sources */,
+				A1000004000000000000001 /* Frameworks */,
+				A1000008000000000000001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SilverWolf;
+			productName = SilverWolf;
+			productReference = A1000003000000000000001 /* SilverWolf.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A1000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					A1000006000000000000001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = A1000009000000000000002 /* Build configuration list for PBXProject "SilverWolf" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A1000005000000000000001;
+			productRefGroup = A1000005000000000000003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A1000006000000000000001 /* SilverWolf */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A1000008000000000000001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A1000007000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1000001000000000000001 /* SilverWolfApp.swift in Sources */,
+				A1000001000000000000002 /* AppState.swift in Sources */,
+				A1000001000000000000003 /* ChatViewModel.swift in Sources */,
+				A1000001000000000000004 /* ChatView.swift in Sources */,
+				A1000001000000000000005 /* SilverWolfPersona.swift in Sources */,
+				A1000001000000000000006 /* CompanionModeView.swift in Sources */,
+				A1000001000000000000007 /* CompanionViewModel.swift in Sources */,
+				A1000001000000000000008 /* SilverWolfAvatarView.swift in Sources */,
+				A1000001000000000000009 /* Memory.swift in Sources */,
+				A1000001000000000000010 /* MemoryStore.swift in Sources */,
+				A1000001000000000000011 /* SmartSceneDetector.swift in Sources */,
+				A1000001000000000000012 /* ActionConfirmationView.swift in Sources */,
+				A1000001000000000000013 /* AppLauncher.swift in Sources */,
+				A1000001000000000000014 /* IntentDetector.swift in Sources */,
+				A1000001000000000000015 /* MusicViewModel.swift in Sources */,
+				A1000001000000000000016 /* MusicView.swift in Sources */,
+				A1000001000000000000017 /* NetEaseService.swift in Sources */,
+				A1000001000000000000018 /* PlayerBar.swift in Sources */,
+				A1000001000000000000019 /* SettingsView.swift in Sources */,
+				A1000001000000000000020 /* SmartHomeView.swift in Sources */,
+				A1000001000000000000021 /* ChatMessage.swift in Sources */,
+				A1000001000000000000022 /* Song.swift in Sources */,
+				A1000001000000000000023 /* AIService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A100000A000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A100000A000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A100000A000000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = SilverWolf/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.silverwolf.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A100000A000000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = SilverWolf/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.silverwolf.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A1000009000000000000001 /* Build configuration list for PBXNativeTarget "SilverWolf" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A100000A000000000000003 /* Debug */,
+				A100000A000000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1000009000000000000002 /* Build configuration list for PBXProject "SilverWolf" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A100000A000000000000001 /* Debug */,
+				A100000A000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A1000000000000000000001 /* Project object */;
+}
