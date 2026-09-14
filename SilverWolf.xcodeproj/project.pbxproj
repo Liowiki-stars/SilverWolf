@@ -30,7 +30,7 @@
 		A1000001000000000000021 /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000002000000000000021 /* ChatMessage.swift */; };
 		A1000001000000000000022 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000002000000000000022 /* Song.swift */; };
 		A1000001000000000000023 /* AIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000002000000000000023 /* AIService.swift */; };
-		A100000A000000000000001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1000003000000000000002 /* Assets.xcassets */; };
+		A100000B000000000000001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1000003000000000000002 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -268,7 +268,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A100000A000000000000001 /* Assets.xcassets in Resources */,
+				A100000B000000000000001 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
