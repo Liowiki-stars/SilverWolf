@@ -77,7 +77,13 @@ final class ChatViewModel: ObservableObject {
 
     // MARK: - 处理音乐指令
     private func handleMusicCommand(_ action: MusicAction, text: String) {
-        let musicVM = AppState.shared.musicViewModel
+        guard let musicVM = AppState.shared.musicViewModel else {
+            let errorMsg = ChatMessage(role: "assistant", content: "小黎，音乐模块未初始化，无法执行而已")
+            messages.append(errorMsg)
+            modelContext.insert(errorMsg)
+            isProcessing = false
+            return
+        }
         var reply = ""
 
         switch action.type {
