@@ -3,7 +3,7 @@ name: 银狼 iOS 云编译
 on:
   push:
     branches: [ main, master ]
-  workflow_dispatch:  # 支持手动触发
+  workflow_dispatch:
 
 jobs:
   build:
@@ -17,31 +17,37 @@ jobs:
       - name: 查看 Xcode 版本
         run: xcodebuild -version
 
-      - name: 编译项目
+      - name: Archive 编译
         run: |
           xcodebuild \
             -project SilverWolf.xcodeproj \
             -scheme SilverWolf \
             -configuration Release \
             -sdk iphoneos \
-            -derivedDataPath build \
+            -archivePath build/SilverWolf.xcarchive \
             CODE_SIGNING_ALLOWED=NO \
             CODE_SIGNING_REQUIRED=NO \
             CODE_SIGN_IDENTITY="" \
-            build
+            archive
 
-      - name: 查找编译产物
+      - name: 检查 archive 内容
         run: |
-          echo "查找 .app 文件..."
-          find build -name "SilverWolf.app" -type d
-          APP_PATH=$(find build -name "SilverWolf.app" -type d | head -1)
-          echo "APP_PATH=$APP_PATH" >> $GITHUB_ENV
+          echo "=== archive 内容 ==="
+          ls -la build/SilverWolf.xcarchive/Products/Applications/SilverWolf.app/
+          echo ""
+          echo "=== 可执行文件权限 ==="
+          ls -l build/SilverWolf.xcarchive/Products/Applications/SilverWolf.app/SilverWolf
 
       - name: 打包 IPA
         run: |
+          APP_PATH="build/SilverWolf.xcarchive/Products/Applications/SilverWolf.app"
           rm -rf Payload SilverWolf.ipa
           mkdir Payload
-          cp -r "${{ env.APP_PATH }}" Payload/
+          cp -r "$APP_PATH" Payload/
+          chmod +x Payload/SilverWolf.app/SilverWolf
+          # 列出 Payload 内容用于调试
+          echo "=== Payload 内容 ==="
+          find Payload -type f
           zip -r SilverWolf.ipa Payload
           ls -lh SilverWolf.ipa
 
@@ -56,4 +62,3 @@ jobs:
         run: |
           echo "✅ 编译完成！"
           echo "📦 IPA 文件已生成，在 Artifacts 中下载"
-          echo "📱 用 Sideloadly 或 TrollStore 安装到手机"
