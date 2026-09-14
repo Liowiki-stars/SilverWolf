@@ -72,6 +72,7 @@ struct ChatView: View {
                         Image(systemName: "ellipsis.circle")
                             .foregroundStyle(Color(hex: "9D4EDD"))
                     }
+                    }
                 }
             }
             .toolbarBackground(Color(hex: "111827"), for: .navigationBar)
