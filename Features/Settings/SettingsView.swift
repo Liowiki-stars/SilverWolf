@@ -117,7 +117,7 @@ struct SettingsView: View {
             .background(Color(hex: "0A0E17"))
             .alert("配置 API 密钥", isPresented: $showAPIKeyInput) {
                 SecureField("API Key", text: .constant(""))
-                Button("保存", role: .default) {}
+                Button("保存") {}
                 Button("取消", role: .cancel) {}
             } message: {
                 Text("输入你的大模型 API 密钥以启用对话功能")

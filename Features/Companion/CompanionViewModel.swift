@@ -25,7 +25,7 @@ final class CompanionViewModel: ObservableObject {
     @Published var showFocusPanel = false
     @Published var isPomodoroBreak = false
 
-    private let focusManager = FocusModeManager.shared
+    let focusManager = FocusModeManager.shared
     private let softwareAssistant = SoftwareSceneAssistant.shared
     private let moodManager = MoodManager.shared
     private let funSystem = FunInteractionSystem.shared
@@ -337,7 +337,7 @@ final class CompanionViewModel: ObservableObject {
         Task {
             var text: String
 
-            if let forced = forced {
+            if let forced = forcedText {
                 text = forced
             } else if isFocusMode {
                 // 专注模式下：使用专注模式话术，减少打扰

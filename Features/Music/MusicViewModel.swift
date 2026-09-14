@@ -208,7 +208,7 @@ final class MusicViewModel: ObservableObject {
     }
 
     // MARK: - 清理
-    private func removeTimeObserver() {
+    nonisolated private func removeTimeObserver() {
         if let observer = timeObserver {
             player?.removeTimeObserver(observer)
             timeObserver = nil
@@ -216,7 +216,6 @@ final class MusicViewModel: ObservableObject {
     }
 
     deinit {
-        removeTimeObserver()
         NotificationCenter.default.removeObserver(self)
     }
 }
