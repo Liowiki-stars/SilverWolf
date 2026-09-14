@@ -92,7 +92,10 @@ final class MusicViewModel: ObservableObject {
 
     private func startPlayback(url: URL, song: Song) {
         // 清理旧的播放器
-        removeTimeObserver()
+        if let observer = timeObserver {
+            player?.removeTimeObserver(observer)
+            timeObserver = nil
+        }
         player = AVPlayer(url: url)
         player?.volume = volume
         player?.play()
