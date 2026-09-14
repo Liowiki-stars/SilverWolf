@@ -217,7 +217,7 @@ final class CompanionViewModel: ObservableObject {
     private func startFocusTimer() {
         stopFocusTimer()
         focusTimer = Timer.scheduledTimer(withTimeInterval: 60, repeats: true) { [weak self] _ in
-            Task { @MainActor in
+            Task { @MainActor [weak self] in
                 self?.updateFocusStatus()
             }
         }
@@ -284,7 +284,7 @@ final class CompanionViewModel: ObservableObject {
 
         // 每5分钟检查一次场景是否需要自动切换
         sceneTimer = Timer.scheduledTimer(withTimeInterval: 300, repeats: true) { [weak self] _ in
-            Task { @MainActor in
+            Task { @MainActor [weak self] in
                 self?.checkAutoSceneSwitch()
             }
         }
@@ -322,7 +322,7 @@ final class CompanionViewModel: ObservableObject {
         guard autoChatEnabled else { return }
 
         autoChatTimer = Timer.scheduledTimer(withTimeInterval: autoChatInterval, repeats: true) { [weak self] _ in
-            Task { @MainActor in
+            Task { @MainActor [weak self] in
                 self?.triggerAutoChat()
             }
         }
