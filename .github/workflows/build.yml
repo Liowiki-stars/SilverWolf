@@ -7,15 +7,17 @@ on:
 
 jobs:
   build:
-    runs-on: macos-latest
+    runs-on: macos-13
     timeout-minutes: 30
 
     steps:
       - name: 检出代码
         uses: actions/checkout@v4
 
-      - name: 查看 Xcode 版本
-        run: xcodebuild -version
+      - name: 切换到 Xcode 15
+        run: |
+          sudo xcode-select -s /Applications/Xcode_15.4.app/Contents/Developer
+          xcodebuild -version
 
       - name: Archive 编译
         run: |
@@ -32,11 +34,11 @@ jobs:
 
       - name: 检查 archive 内容
         run: |
-          echo "=== archive 内容 ==="
+          echo "=== .app 内容 ==="
           ls -la build/SilverWolf.xcarchive/Products/Applications/SilverWolf.app/
           echo ""
-          echo "=== 可执行文件权限 ==="
-          ls -l build/SilverWolf.xcarchive/Products/Applications/SilverWolf.app/SilverWolf
+          echo "=== Info.plist 关键信息 ==="
+          plutil -p build/SilverWolf.xcarchive/Products/Applications/SilverWolf.app/Info.plist | head -20
 
       - name: 打包 IPA
         run: |
@@ -45,11 +47,12 @@ jobs:
           mkdir Payload
           cp -r "$APP_PATH" Payload/
           chmod +x Payload/SilverWolf.app/SilverWolf
-          # 列出 Payload 内容用于调试
-          echo "=== Payload 内容 ==="
-          find Payload -type f
-          zip -r SilverWolf.ipa Payload
+          # 用 ditto 打包（macOS 标准方式，保留权限和属性）
+          ditto -c -k --sequesterRsrc --keepParent Payload SilverWolf.ipa
           ls -lh SilverWolf.ipa
+          echo ""
+          echo "=== IPA 内容验证 ==="
+          unzip -l SilverWolf.ipa
 
       - name: 上传 IPA 产物
         uses: actions/upload-artifact@v4
@@ -57,8 +60,3 @@ jobs:
           name: SilverWolf-iOS-IPA
           path: SilverWolf.ipa
           retention-days: 30
-
-      - name: 编译完成
-        run: |
-          echo "✅ 编译完成！"
-          echo "📦 IPA 文件已生成，在 Artifacts 中下载"
